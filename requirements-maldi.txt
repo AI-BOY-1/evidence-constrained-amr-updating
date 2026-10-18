@@ -1,0 +1,4 @@
+-r requirements.txt
+pandas==2.2.1
+tensorflow==2.16.1
+tf-keras==2.16.0

@@ -1,0 +1,747 @@
+{
+  "scope": "Study scripts have configurable Path-expression/import edits and normalized interpreter instruction strings; results must be generated with new code hashes. Existing method/metric thresholds are unchanged.",
+  "scripts": [
+    {
+      "file": "acquire_combiant_images.py",
+      "original_sha256": "28ae6cbbc6a5e5cdb7b50e207840e8744c467dd8bafc72f2d3c8d932045e9a6a",
+      "portable_sha256": "28ae6cbbc6a5e5cdb7b50e207840e8744c467dd8bafc72f2d3c8d932045e9a6a",
+      "path_edits": []
+    },
+    {
+      "file": "acquire_combiant_public.py",
+      "original_sha256": "3c15dfa95fbd0777ced735ea1ff7077145b09afcb588b15cc85e20193a042b63",
+      "portable_sha256": "3c15dfa95fbd0777ced735ea1ff7077145b09afcb588b15cc85e20193a042b63",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_audit_acquisition_action.py",
+      "original_sha256": "2665053bae0c1b58c7388874f94596327363904c02f3f3d8d22b041e21263dba",
+      "portable_sha256": "13e367623fe02d13444564f5ffa8d5f23c3d5e1a4324cb94775967af15079302",
+      "path_edits": [
+        {
+          "line": 7,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc/audit_acquisition_action_v1')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_audit_transfer.py",
+      "original_sha256": "8529fdcd3d94c6d6c9ce008c144f29cc5a0ca174eae02183e14aaf41f958a48b",
+      "portable_sha256": "e1ca21b6fe5b79b908fef19704330007fc7dcf7048ee05162e73b24dde3dbf83",
+      "path_edits": [
+        {
+          "line": 9,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_combiant_error_audit.py",
+      "original_sha256": "65c6209a5f451143dffd82cd64c70085fb4e59068f3da37eeb7754d54d27f735",
+      "portable_sha256": "4b5f3096b6c41b7ea537010d518c10b25776ebf947036fba94fc159cfa9f2e33",
+      "path_edits": [
+        {
+          "line": 10,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1/own_vision_v1')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_combiant_measurements.py",
+      "original_sha256": "52f440d50be1e331b39c58c887f66add94b680a3ed81a2aaceede54df3c844ed",
+      "portable_sha256": "52f440d50be1e331b39c58c887f66add94b680a3ed81a2aaceede54df3c844ed",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_combiant_own_vision.py",
+      "original_sha256": "57114431f7fe7c433535ed6ee0b5254b6d2aa1d5cc4273d3e05219621bc408bc",
+      "portable_sha256": "06bda3a2eef2c0840ac3c597620df42c0d8750f7338ea942e59916f3127fd721",
+      "path_edits": [
+        {
+          "line": 15,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_ecoli_ani_annotation_repair.py",
+      "original_sha256": "fac4ae7f9b7d0bbc16013937ccfb063ea9bb4f3117294cb353054303a9fa97f6",
+      "portable_sha256": "8feefc7d3030fe6426c424e2313e0ae0b31e403ec698e3d448b7bf178e9d19e5",
+      "path_edits": [
+        {
+          "line": 11,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc/ani_annotation_repair_v1')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_ecoli_frozen_query_ablation.py",
+      "original_sha256": "0b18668e8a889171fe1fbf3f4690062d03359d943c85e57dfac28c577993d681",
+      "portable_sha256": "0b18668e8a889171fe1fbf3f4690062d03359d943c85e57dfac28c577993d681",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_ecoli_full.py",
+      "original_sha256": "cbb13eeb24775d814b1dabf3f53585728b2eb813938ac8acefda452c46745443",
+      "portable_sha256": "cbb13eeb24775d814b1dabf3f53585728b2eb813938ac8acefda452c46745443",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_ecoli_quality_sensitivity.py",
+      "original_sha256": "01486fd0a4229591a71714a6f4171724bc36f14c5731f16d34d420343b3bfdd0",
+      "portable_sha256": "01486fd0a4229591a71714a6f4171724bc36f14c5731f16d34d420343b3bfdd0",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_msdeepamr_error_transitions.py",
+      "original_sha256": "95bcb4c0ee8540a130b9ae5f30330384e2daf5ee497bb47bc442b89839aee6fc",
+      "portable_sha256": "730d41ec94390cbfff0d7be7aeaa2653d9a3d3cac981522bd246f983e7922449",
+      "path_edits": [
+        {
+          "line": 11,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/msdeepamr_reproduction/reexecution_B_v3')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_msdeepamr_reexecution.py",
+      "original_sha256": "4197dc2c6815515ff382391bb6a911482673eabceddef494c10453a5ee9601eb",
+      "portable_sha256": "f35c2d25a0005f1c246a5325059231fa2d7ebdab5805e61d7ca4f1529bb32c34",
+      "path_edits": [
+        {
+          "line": 9,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/msdeepamr_reproduction/reexecution_B_v3')"
+        }
+      ]
+    },
+    {
+      "file": "analyze_reliability_controls.py",
+      "original_sha256": "769049af170647651666eb70a368fb7997d494864a2803fb2a24b230ec8fc4bf",
+      "portable_sha256": "769049af170647651666eb70a368fb7997d494864a2803fb2a24b230ec8fc4bf",
+      "path_edits": []
+    },
+    {
+      "file": "analyze_repair_dynamics.py",
+      "original_sha256": "2f5775aeff4a5a7dcef2a729e5f9f67aee5d798bf6d7cb50b539de315096f1b7",
+      "portable_sha256": "d019ef603c6ff2cd0cfb8cc66cb55973d29bd9c6af9d1bed5abe0eff4bd549b2",
+      "path_edits": [
+        {
+          "line": 15,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "audit_combiant_pairing.py",
+      "original_sha256": "df28746396ca7471c7a534340bf1494adb3403d23e79da04230951f25748dea1",
+      "portable_sha256": "ff6955d35251ba10afb703169305ebd840c7ab1c2c75c036d57591331ab81fb9",
+      "path_edits": [
+        {
+          "line": 8,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "audit_ecoli_fasta.py",
+      "original_sha256": "96b1fd13d58f308bc3d3b5c216b9c0612d7bc09eea31f6770a3ac59924fc5a13",
+      "portable_sha256": "a26e475092fb2036fb4b6aac6a75bf0a0c3cdca54b2254e7e044c6bf80d1d907",
+      "path_edits": [
+        {
+          "line": 4,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "audit_ecoli_metadata_independence.py",
+      "original_sha256": "57dc9a48127db5f2607bcb1ae7bce7516cfba70bc08ff50c66bb19c4034e4706",
+      "portable_sha256": "3f33cecd93060df53939316f5a3e212b03f05e526a5a214d726867c0374d3b33",
+      "path_edits": [
+        {
+          "line": 16,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "audit_msdeepamr_spectrum_identity.py",
+      "original_sha256": "68f5b53c7ee700ca0827926f14cb77681c6b1765df55e43a9a09d5d022065000",
+      "portable_sha256": "68f5b53c7ee700ca0827926f14cb77681c6b1765df55e43a9a09d5d022065000",
+      "path_edits": []
+    },
+    {
+      "file": "build_manuscript_package_2026_10_12.py",
+      "original_sha256": "e4e340e02b14292cd20c061c3e84f9e019e7093cd81992cdfe1520a43923113a",
+      "portable_sha256": "190133da50484c9475ffa3480899df10e45fbb778291138815ce9de6b2bd70bb",
+      "path_edits": [
+        {
+          "line": 19,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "counterexample_guided_repair.py",
+      "original_sha256": "ee5e22bf56e787f66b1c398539b38abfa08b789dd359b4e26535abd70856c000",
+      "portable_sha256": "ee5e22bf56e787f66b1c398539b38abfa08b789dd359b4e26535abd70856c000",
+      "path_edits": []
+    },
+    {
+      "file": "curate_ecoli_bvbrc.py",
+      "original_sha256": "cf9c765527907891f79b3d168bbba36a231c1152c202bed8b3b132b0b2dbe95c",
+      "portable_sha256": "60031ee74a65e4b75976e2ca2a866c34c2a839182794da4ca1d2fd3f1d87b2ff",
+      "path_edits": [
+        {
+          "line": 6,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "decision_repair_core.py",
+      "original_sha256": "351bd61f1aa8dce1ecb624ca87ac48047824127b4b00f72ad761d1ce4553e808",
+      "portable_sha256": "351bd61f1aa8dce1ecb624ca87ac48047824127b4b00f72ad761d1ce4553e808",
+      "path_edits": []
+    },
+    {
+      "file": "ecoli_clusters.py",
+      "original_sha256": "204b8680a4a00dd14d30f647e4af554033db712a1492b8b306793b0019b3969e",
+      "portable_sha256": "8d7fa73fb755f2f4321bc1fbb10ed7d45a0aa76fb2c87f083f8ae5d703b02ea4",
+      "path_edits": [
+        {
+          "line": 6,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "inspect_combiant_archive.py",
+      "original_sha256": "05b20c5548c53c45cf7ea03c2dc7a32b711333d606ab0a2ffd1fdefb1280581a",
+      "portable_sha256": "95158598523f4673b5b36a0ae54cc03a53eab05d9058f71039fdbb4feb7e603a",
+      "path_edits": [
+        {
+          "line": 14,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "make_combiant_photo_atlas.py",
+      "original_sha256": "7f9ac3f9f60cc0916f4d4ff1379d26d8ba9a9e3c2aea964710ebfdf2d54e5841",
+      "portable_sha256": "7f9ac3f9f60cc0916f4d4ff1379d26d8ba9a9e3c2aea964710ebfdf2d54e5841",
+      "path_edits": []
+    },
+    {
+      "file": "make_ecoli_frozen_query_figure.py",
+      "original_sha256": "3d2aec440e6557c44a4bcb8682061dd31b0c2ae2d3c705ff4f5992a999c3f051",
+      "portable_sha256": "3d2aec440e6557c44a4bcb8682061dd31b0c2ae2d3c705ff4f5992a999c3f051",
+      "path_edits": []
+    },
+    {
+      "file": "make_ecoli_full_figure.py",
+      "original_sha256": "d0dc01405c6525b6c2f7afecc1cd89a49c93cc6eda431e0129ed55d510341f54",
+      "portable_sha256": "d0dc01405c6525b6c2f7afecc1cd89a49c93cc6eda431e0129ed55d510341f54",
+      "path_edits": []
+    },
+    {
+      "file": "make_msdeepamr_spectral_examples.py",
+      "original_sha256": "0638ab9df0167cae1dd468222ffaeb0f9ad6bfa1233695ca67db94538ffe96de",
+      "portable_sha256": "0638ab9df0167cae1dd468222ffaeb0f9ad6bfa1233695ca67db94538ffe96de",
+      "path_edits": []
+    },
+    {
+      "file": "make_paper_figures.py",
+      "original_sha256": "f758655bae3d789fae38727c2b9fa2a5a53ab395367476360984be55720f470d",
+      "portable_sha256": "9aa89e63870a2b3a3cc72467f6ea32fb6b779e9c876bc9ab294b0997bc3bc4a5",
+      "path_edits": [
+        {
+          "kind": "interpreter_instruction",
+          "new_expression": "python"
+        }
+      ]
+    },
+    {
+      "file": "make_sequence_evidence_portraits.py",
+      "original_sha256": "9943c4725a889906a1542c88cfc420e373d05e2c90f76e6d55d18d4f34129bab",
+      "portable_sha256": "c16680fc3e0b6a18afe11cbfbcb029a4865d8ac2ba7c56a54ae107bcd5068638",
+      "path_edits": [
+        {
+          "line": 19,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        },
+        {
+          "line": 21,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('reference/resfinder_db/genomicepidemiology-resfinder_db-eecf0aa20759/all.fsa')"
+        }
+      ]
+    },
+    {
+      "file": "msdeepamr_model_compatibility.py",
+      "original_sha256": "a307c416dfea4891a346ba0efd8da239cebdef4f9b4703e3dbec95b15b2f6671",
+      "portable_sha256": "a307c416dfea4891a346ba0efd8da239cebdef4f9b4703e3dbec95b15b2f6671",
+      "path_edits": []
+    },
+    {
+      "file": "report_combiant_matched_context.py",
+      "original_sha256": "ba48411eb2482f94211b19a4b80a55f59d48a2ab3b91269398f1ba7981fe1fb2",
+      "portable_sha256": "f2a4eb9e8ef8d52e89819387ca4a1a924ad91640972c196c96358cb8227ef12a",
+      "path_edits": [
+        {
+          "line": 6,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1/matched_context_v1')"
+        }
+      ]
+    },
+    {
+      "file": "run_audit_acquisition_action.py",
+      "original_sha256": "4a0f13b7714e87148ace0d59dc568976b2bd285aa81aac0c38c9c03b18c3268e",
+      "portable_sha256": "8ef3e315c14d3ad4e4881ccb992cff0de12c721d48376a817f202e09ae35cef5",
+      "path_edits": [
+        {
+          "line": 14,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_combiant_matched_context.py",
+      "original_sha256": "863e690de6e816d0c8b2e29aff9c32b657b95ce1a4d7c80ddd08a814186a6bde",
+      "portable_sha256": "50077aad5ea2f77e8d864e62c1ea76f97d99f03539e1307276b8d14fcde96b5c",
+      "path_edits": [
+        {
+          "line": 13,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1/own_vision_v1')"
+        }
+      ]
+    },
+    {
+      "file": "run_combiant_own_vision.py",
+      "original_sha256": "7eec1c886960f844997f82f092042724a88ec0d8292808ce694fc8bfe617c38a",
+      "portable_sha256": "fa9532574a4a92af8983bc74e646811e768d063922c43f62a7e6cc9e5070d448",
+      "path_edits": [
+        {
+          "line": 17,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "run_decision_repair.py",
+      "original_sha256": "01e524fb4e3c83802434c715150b5c5932855fa4520eb9d4311daec9cbac6d39",
+      "portable_sha256": "67d8552c309f16c82ad63808b199d10ad7dc4216837128f1d678dd700dedeacd",
+      "path_edits": [
+        {
+          "line": 20,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/completion/decision_repair')"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_acquired_amr_annotation.py",
+      "original_sha256": "82b2e1e5a639100ff0e4cbf317d3695e15c342bdd6e17e1a5354727efeb0cb73",
+      "portable_sha256": "f1067832e38e04decb2d8efa8b3c5b6d5b278a8d4cb93d385296d20644e65bef",
+      "path_edits": [
+        {
+          "line": 10,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        },
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('reference/resfinder_db/genomicepidemiology-resfinder_db-eecf0aa20759')"
+        },
+        {
+          "line": 13,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('tools/blast/ncbi-blast-2.17.0+/bin')"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_ani_annotation_repair.py",
+      "original_sha256": "e4dd344a73fa7401c7876a12123ba21a4aa7ee6100f941f36cb464a7a9ff6fb3",
+      "portable_sha256": "2ec5817dc5b7cd8594c6518ce096f330efa55fb8ecd52f1650823c1c427af921",
+      "path_edits": [
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_directional_guard.py",
+      "original_sha256": "a14eb17cf2c1fe2e1a367867fcb5015fddbf96d33ea6c7d0c5548c6e4d16dae5",
+      "portable_sha256": "8968de0568ec9e6229f7d64e1879db61f137646885c4ab6631e28db223e0b500",
+      "path_edits": [
+        {
+          "line": 13,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_frozen_query_ablation.py",
+      "original_sha256": "992fc4e169a66138840b3fcb9261cff6a7d837bc7e40bbb47f101ae26a429e07",
+      "portable_sha256": "5529dad9cb155f28719e70653e84c4b681b82b1c546e770115468f665a977b5c",
+      "path_edits": [
+        {
+          "line": 20,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_full_skani_screen.py",
+      "original_sha256": "bb71fc875bc49e17b8dc4264e3863c9c7bb474d2a07fbe74186db1df061cf8f5",
+      "portable_sha256": "d729ac3e1571e16be30b56e327f85d82e448b3af6c33914c5b32cabae37e4ebd",
+      "path_edits": [
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        },
+        {
+          "line": 13,
+          "kind": "local_research_root",
+          "new_expression": "ncs_paths.RESEARCH_ROOT"
+        }
+      ]
+    },
+    {
+      "file": "run_ecoli_repair.py",
+      "original_sha256": "f5734cf9a435e1db8e5c3fcf9cb61810ea41cee838077b42afcf3210caab976c",
+      "portable_sha256": "f5734cf9a435e1db8e5c3fcf9cb61810ea41cee838077b42afcf3210caab976c",
+      "path_edits": []
+    },
+    {
+      "file": "run_msdeepamr_reexecution.py",
+      "original_sha256": "2d9052549c9d117653dbad975692888baf4bffc9024dc4b5366a3866e0c95bad",
+      "portable_sha256": "9fe26f4c2b730999cee9c823c5f321056536d541b8f27154b554af006cf3fcc9",
+      "path_edits": [
+        {
+          "line": 28,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/msdeepamr_reproduction')"
+        }
+      ]
+    },
+    {
+      "file": "run_ncs_experiments.py",
+      "original_sha256": "0a0b2c49be7f28863eceb0e69369dedb69713a5c79a3d56b2b38767d450de9fe",
+      "portable_sha256": "0a0b2c49be7f28863eceb0e69369dedb69713a5c79a3d56b2b38767d450de9fe",
+      "path_edits": []
+    },
+    {
+      "file": "run_reliability_controls.py",
+      "original_sha256": "ac7fc20106a5e9c36bfc90457e5158503fb9f417a793b077a8fde3e3398a26dc",
+      "portable_sha256": "98f884b5916a7224cd6702904b14f6eebf0bd60aff7a853df6e1764509067da7",
+      "path_edits": [
+        {
+          "line": 19,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_reliability_debt_audit.py",
+      "original_sha256": "0879cba708e0add08a6ac56da5500c75f43f0d3bb61ec00fe907b8c299749818",
+      "portable_sha256": "40d90aa8e091167249b9fb383217368e53affe41ff23e315d600a0321552bc4f",
+      "path_edits": [
+        {
+          "line": 16,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "run_repair_dynamics.py",
+      "original_sha256": "a9aca6b4148254e4f97a803f61921812ccad98944391e152f3c45fd4b8f1a384",
+      "portable_sha256": "f9cf23c2abfb6f51944b7667aed7d96a32072f7cb71e5b1e27e44e7865b1ed64",
+      "path_edits": [
+        {
+          "line": 15,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "test_audit_acquisition_action.py",
+      "original_sha256": "c043526377bc0ebabda535f28d8e8944c71b0087d288e2996772d910345d031b",
+      "portable_sha256": "c043526377bc0ebabda535f28d8e8944c71b0087d288e2996772d910345d031b",
+      "path_edits": []
+    },
+    {
+      "file": "test_msdeepamr_error_transitions.py",
+      "original_sha256": "54cf3ff76b1148226c258f562cb2d310edda0c6b73b05fd51ef7a04a867fc886",
+      "portable_sha256": "54cf3ff76b1148226c258f562cb2d310edda0c6b73b05fd51ef7a04a867fc886",
+      "path_edits": []
+    },
+    {
+      "file": "test_reliability_controls.py",
+      "original_sha256": "c88656a702d43ca6265c933046909d6bb8cb7455e3faf6878724cf1b2dfd1bd5",
+      "portable_sha256": "c88656a702d43ca6265c933046909d6bb8cb7455e3faf6878724cf1b2dfd1bd5",
+      "path_edits": []
+    },
+    {
+      "file": "validate_audit_acquisition_action.py",
+      "original_sha256": "2b0b99e40ede76401a3dc7bf4f9d8c87a62e6c259199b512b9796ae4c9868405",
+      "portable_sha256": "4eb6716c0f04bf9e43be8112947e19e07fd5ec4ec3b46208404141dd2c0f9e76",
+      "path_edits": [
+        {
+          "line": 8,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_audit_acquisition_analysis.py",
+      "original_sha256": "d19c16b8b45dd8c9f0878590bcf08d941a47e512fb7f8ca64154a59bce0580a0",
+      "portable_sha256": "673e4b73acb27c1c20a74ed4e73d6adb98443e417613387d753e933fbea38200",
+      "path_edits": [
+        {
+          "line": 7,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc/audit_acquisition_action_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_audit_transfer.py",
+      "original_sha256": "7490d1d611ebca6ea3679bbc47f3883b9bb56b3f7e65f6db7f00e30c026bbdb5",
+      "portable_sha256": "155efe29ebd669dca74442a8ccda194e2545c7e4730c48c73d54908dd4c67aba",
+      "path_edits": [
+        {
+          "line": 8,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_combiant_error_audit.py",
+      "original_sha256": "b007fe2395cae678dcf79399ec0048fd9398905bed08ff74dee6111911d351d9",
+      "portable_sha256": "9c11bea0f43d267f5de8a8208ce2aaa4a3434ec435e8936de2d25f5b99765402",
+      "path_edits": [
+        {
+          "line": 8,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1/own_vision_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_combiant_matched_context.py",
+      "original_sha256": "0e3a3de0d4aee5f4785f3865d79ce6e06efbab6ab45774dfc9b3b7b677a973d5",
+      "portable_sha256": "bf447e96fa08cbde7daa1ddb64d83ee4985a61e00e7c342a901ccdffe5a5e0dc",
+      "path_edits": [
+        {
+          "line": 10,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1/own_vision_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_combiant_own_vision.py",
+      "original_sha256": "f91a2b5355eb7ec4d569eafa436ed5bc631047f31faab88288a6c1a7031a5f80",
+      "portable_sha256": "c688c8ddfb69e746e6edd9ac4af040333d66cedd8c65a8e5632ac27cab710eed",
+      "path_edits": [
+        {
+          "line": 16,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_combiant_photo_atlas.py",
+      "original_sha256": "e571419cb6336f3a5833c9f7c533a2025f4e98e3d4b28a7eba0cd76c110bf929",
+      "portable_sha256": "a56b297f2d041d5c44a93944a3534ff14a945acff5d2342ade4d7da45b7f16bd",
+      "path_edits": [
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_combiant_reanalysis.py",
+      "original_sha256": "3736cf956a96283c5ab1b946f0562c1babee81607c4bc94d70c4e0659c516444",
+      "portable_sha256": "ff4f0a2b1be8c2d7415a6e95b1ed6a8bf4ae11dd6c52f55ebe0f4e304211baab",
+      "path_edits": [
+        {
+          "line": 14,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/combiant_public_v1')"
+        }
+      ]
+    },
+    {
+      "file": "validate_ecoli_acquired_amr_annotation.py",
+      "original_sha256": "65db743a6a4c3ad3a98a572e06781ea998cfdaa4db56b29543c55ecf8deb09f6",
+      "portable_sha256": "8122fd5348eb524f9d97650869d891ca3216bebcd2ce34e9e01a5de1038a748b",
+      "path_edits": [
+        {
+          "line": 7,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        },
+        {
+          "line": 27,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('reference/resfinder_db/genomicepidemiology-resfinder_db-eecf0aa20759/all.fsa')"
+        },
+        {
+          "line": 31,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('tools/blast/ncbi-blast-2.17.0+/bin/blastn.exe')"
+        }
+      ]
+    },
+    {
+      "file": "validate_ecoli_ani_annotation_repair.py",
+      "original_sha256": "b974321231a96ee6e0af238ab4e41adbcd11a574822baeb53b64da94414d5c49",
+      "portable_sha256": "8268360710a7abf516beb23dc81a7bfb953ad41a2fd2c2c439ef56bbfd25e5cd",
+      "path_edits": [
+        {
+          "line": 14,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_ecoli_full_figure.py",
+      "original_sha256": "5d4a199d439c6c2cd309558a2f0f20669a8ff66b44632792396e5d01943e8384",
+      "portable_sha256": "5d4a199d439c6c2cd309558a2f0f20669a8ff66b44632792396e5d01943e8384",
+      "path_edits": []
+    },
+    {
+      "file": "validate_msdeepamr_error_transitions.py",
+      "original_sha256": "82b804eb8e235df2e786da15908b928249efc2e5b550d2c72f3eabb121e323ee",
+      "portable_sha256": "e42f11052b4e34e6745ada485907eaaa887b47fb42e212e80167b74f44300338",
+      "path_edits": [
+        {
+          "line": 9,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/msdeepamr_reproduction/reexecution_B_v3')"
+        }
+      ]
+    },
+    {
+      "file": "validate_msdeepamr_reexecution.py",
+      "original_sha256": "f19544f01562d0e271c517c12e72f464cf6c6e5b2d4993960c9df0ee49522cf6",
+      "portable_sha256": "8e31027d7da13d9e38c7fccf2a29a0d3fa2597a94d70a274d9c4bf5a4b38eaf9",
+      "path_edits": [
+        {
+          "line": 11,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/msdeepamr_reproduction/reexecution_B_v3')"
+        }
+      ]
+    },
+    {
+      "file": "validate_msdeepamr_spectral_examples.py",
+      "original_sha256": "3a8ac29ed582d64e3a34cb6b4960e95e7008187b8f1e2dd19e13f23ee9a594d3",
+      "portable_sha256": "3a8ac29ed582d64e3a34cb6b4960e95e7008187b8f1e2dd19e13f23ee9a594d3",
+      "path_edits": []
+    },
+    {
+      "file": "validate_paper_figures.py",
+      "original_sha256": "724846309a362a7d1240f1cd1d1450f789cf08897feb23a83371c5644098abb8",
+      "portable_sha256": "724846309a362a7d1240f1cd1d1450f789cf08897feb23a83371c5644098abb8",
+      "path_edits": []
+    },
+    {
+      "file": "validate_reliability_controls.py",
+      "original_sha256": "2d3d563122b37ee9228f7e61e75c50145e4610128814526df7fc29bc16a50f24",
+      "portable_sha256": "2d3d563122b37ee9228f7e61e75c50145e4610128814526df7fc29bc16a50f24",
+      "path_edits": []
+    },
+    {
+      "file": "validate_reliability_debt_audit.py",
+      "original_sha256": "b37421005114a8b7ce5e7f37a86af99566260e19829af188f04f1a959b01f620",
+      "portable_sha256": "07c743e1bd392c7f0da2286b91c0fab7fc5e8be7fee8925503484ebfb5cdaeb8",
+      "path_edits": [
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_repair_dynamics.py",
+      "original_sha256": "f0b44f96f0aebe843bdc7249d988df52feb344ca808f049327b5b63b76d4524a",
+      "portable_sha256": "0900df3842dc183fee9af2e56f6440b3ab94701ddd58e1d87df597fda28dee0d",
+      "path_edits": [
+        {
+          "line": 12,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_repair_dynamics_figure.py",
+      "original_sha256": "4bd6f0b931e112127d79e243eb943b41baa5dcf210c44c3b1c383ba6ae6ec10c",
+      "portable_sha256": "9db46d7eca568b3ee9d07a53bddd69409aae373815c8056a096b36d73dde4f80",
+      "path_edits": [
+        {
+          "line": 8,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        }
+      ]
+    },
+    {
+      "file": "validate_sequence_evidence_portraits.py",
+      "original_sha256": "d50ec8e176c5562a60587b401aed35617402212fc43c42af541812dc9ae3d8ee",
+      "portable_sha256": "3f9b0fe4592bed73868f6da0818cc7756e32a999f5aeb6f857ce0b086064dab3",
+      "path_edits": [
+        {
+          "line": 9,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('experiments/ecoli_bvbrc')"
+        },
+        {
+          "line": 22,
+          "kind": "configurable_data_root",
+          "new_expression": "ncs_paths.data_path('reference/resfinder_db/genomicepidemiology-resfinder_db-eecf0aa20759/all.fsa')"
+        }
+      ]
+    }
+  ]
+}

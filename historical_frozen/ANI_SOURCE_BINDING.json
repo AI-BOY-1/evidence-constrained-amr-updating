@@ -1,0 +1,12 @@
+{
+  "scope": "Five current source snapshots equal the original ANI experiment binding",
+  "original_binding_path": "D:\\NCS_data\\experiments\\ecoli_bvbrc\\ani_annotation_repair_v1\\binding.json",
+  "original_binding_sha256": "1c556a0286bcc6589626b68e3cb1c6cc294f83f1bb9b27feba0171461b33d3e4",
+  "code": {
+    "run_ecoli_ani_annotation_repair.py": "e4dd344a73fa7401c7876a12123ba21a4aa7ee6100f941f36cb464a7a9ff6fb3",
+    "run_decision_repair.py": "01e524fb4e3c83802434c715150b5c5932855fa4520eb9d4311daec9cbac6d39",
+    "decision_repair_core.py": "351bd61f1aa8dce1ecb624ca87ac48047824127b4b00f72ad761d1ce4553e808",
+    "counterexample_guided_repair.py": "ee5e22bf56e787f66b1c398539b38abfa08b789dd359b4e26535abd70856c000",
+    "run_ecoli_repair.py": "f5734cf9a435e1db8e5c3fcf9cb61810ea41cee838077b42afcf3210caab976c"
+  }
+}

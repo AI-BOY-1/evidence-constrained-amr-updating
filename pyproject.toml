@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-constrained-amr-updating"
+version = "0.1.0"
+description = "Auditable evidence-constrained updating controller for AMR research"
+authors = [{name = "Xingran Guo"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.26.4", "scipy==1.13.0", "scikit-learn==1.4.2", "threadpoolctl==3.7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

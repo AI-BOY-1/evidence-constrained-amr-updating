@@ -1,0 +1,7 @@
+-r requirements.txt
+pandas==2.2.1
+Pillow==12.3.0
+matplotlib==3.8.4
+biopython==1.88
+sourmash==4.9.4
+pyskani==0.2.0

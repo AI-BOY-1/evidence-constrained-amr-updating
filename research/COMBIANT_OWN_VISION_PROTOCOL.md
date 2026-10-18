@@ -1,0 +1,24 @@
+# CombiANT：本项目独立照片测量实验
+
+## Question
+
+Can a model trained only on the public input photographs predict the six CombiANT distances (A, B, C, AB, BC, AC) on a previously unseen physical plate, and does it expose a reproducible tail of large errors that mean error hides?
+
+This is our own exploratory computer-vision experiment. The published software output is a reference comparator and is never used as an input feature. It is not a new clinical AST classifier, resistance-mechanism detector, or genome-linked result.
+
+## Frozen analysis
+
+1. Use only uniquely paired rows from `pairing_audit.json`; exclude duplicate JPG/PNG names and retain them in the audit.
+2. Use the original input photograph. Convert to RGB, center-crop to the largest square, resize to 32 x 32, and flatten normalized channels. Add 22 fixed global features (five summaries for each of RGB and grayscale, plus two radial intensity moments). No overlays, output images, manual measurements, or original software values enter the feature vector. Save a full transformed tensor for independent feature replay.
+3. Split by physical `plate` with deterministic five-fold `GroupKFold`; all user views of one plate stay in the same fold. This is the primary isolation rule.
+4. Fit fixed `Ridge(alpha=100)` and `ExtraTreesRegressor(n_estimators=128, min_samples_leaf=3, max_features=1.0, random_state=7, n_jobs=1)` multi-output regressors on the training plates. These are explicit AI/ML baselines for this visual branch, not a newly invented architecture; no hyperparameter selection is performed after seeing test results. Use CPU and one estimator worker to avoid interfering with other projects.
+5. Compare against a training-fold mean predictor and the published software values. The latter is a reference audit, not an independent model baseline.
+6. Report MAE, median absolute error, 95th percentile absolute error, maximum absolute error, signed bias, and counts above 1, 2, and 3 mm for each distance and macro-average. Report every fold and all rows; no cherry-picking. Use paired plate-level errors for the model versus the mean predictor.
+7. Run a pre-declared sensitivity using half-resolution (16 x 16) features. It is a representation check, not a second tuned model.
+8. For each held-out fold, rank physical plates by mean tree prediction standard deviation across all views and distances. Compare with descending image-quality risk (negative discrete-Laplacian variance on the 32 x 32 gray input), and 100 deterministic random plate rankings with seeds 0-99. At budgets 0, 10%, 25%, 50% of held-out plates (floor), record exact reviewed IDs, unresolved total absolute error divided by the original finite count, unreviewed MAE, and capture of absolute errors >2 mm. All views of one selected plate count as one review unit. Replacement by its manual value is a perfect-reference simulation, not a measured human intervention or clinical benefit. A technical 2 mm cutoff is not an AST breakpoint. Random rankings do not provide permutation-test p-values.
+9. Full experiment requires all 299 archived inputs downloaded and decoded. A separate pilot snapshot freezes the acquired-photo manifest at execution start and uses every available unique pair, without selection by outcome. It uses the same parameters and five-fold plate isolation, requires at least ten plates, and reports missing photos and its operator imbalance. Pilot and full outputs live in separate directories. A pilot does not establish complete-cohort or cross-operator generalization.
+10. As a separate operator-transfer stress test on the complete cohort, train on user 1 photographs from training plates and test only user 2/3 photographs from unseen plates, using the same five-fold plate assignment and fixed Ridge/ExtraTrees models. Retain every ineligible fold or invalid target instead of changing the split. No hyperparameters may be tuned on the pilot or transfer results.
+
+One manual A distance is missing (20230920_154218). Preserve that image and its other five test targets. Fixed multi-output estimators train on complete-target training rows only; the mean baseline uses each distance's available training labels. Per-distance evaluation excludes only a missing reference; macro per-image error uses complete six-distance targets and reports its denominator. Review simulation denominators count finite targets only. No imputed manual value is treated as observed.
+
+The target is a continuous measurement in millimetres. We do not threshold it into S/I/R or infer antibiotic synergy. Manual readings are a comparison reference with their own operator variability, not a perfect gold standard. A successful result would support only image-to-measurement feasibility on this public assay; a failure is equally informative for the claimed workflow.

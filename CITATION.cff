@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it as below.
+title: Evidence-Constrained AMR Updating Controller
+authors:
+  - family-names: Guo
+    given-names: Xingran
+version: 0.1.0
+date-released: 2026-10-18
+url: https://github.com/AI-BOY-1/evidence-constrained-amr-updating
+license: MIT
+type: software
