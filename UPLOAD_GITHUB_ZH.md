@@ -1,6 +1,6 @@
 # 上传 GitHub
 
-1. 解压 `github_code_package_v1_2026_10_14.zip`。
+1. 解压 `evidence_constrained_amr_updating_controller_0.1.0.zip`，或克隆本仓库。
 2. 将解压后这一层目录内的 README.md、src、research、tests、docs、.github、依赖文件和LICENSE上传到仓库根目录，不要只上传ZIP。
 3. 网页上传时 `.github` 和 `.gitignore` 可能被文件选择界面隐藏；推荐用 Git 命令完整提交。
 4. 按README安装核心依赖，执行 `python scripts/verify_release.py`、`python -m unittest discover -s tests -v` 和合成demo。
